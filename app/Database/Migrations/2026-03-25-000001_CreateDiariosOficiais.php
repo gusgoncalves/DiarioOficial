@@ -50,7 +50,8 @@ class CreateDiariosOficiais extends Migration
 
     public function down()
     {
-        $this->forge->dropTable('diarios_busca_resultado');
-        $this->forge->dropTable('diarios_oficiais');
+        $this->forge->dropTable('diarios_oficiais_paginas', true);
+        $this->forge->dropTable('diarios_busca_resultado', true);
+        $this->forge->dropTable('diarios_oficiais', true);
     }
 }
